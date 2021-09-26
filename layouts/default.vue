@@ -1,16 +1,16 @@
 <template>
   <div>
     <nuxt />
-    <footer-prismic />
+    <site-footer />
   </div>
 </template>
 
 <script>
-import FooterPrismic from "~/components/FooterPrismic.vue";
+import SiteFooter from "~/components/SiteFooter.vue";
 
 export default {
   components: {
-    FooterPrismic
+    SiteFooter
   },
   head() {
     return {
