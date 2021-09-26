@@ -1,0 +1,47 @@
+/* purgecss start ignore */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+/* purgecss end ignore */
+@import 'tailwindcss/utilities';
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  @apply leading-none;
+}
+
+.am-section-content {
+  max-width: 1440px;
+  @apply mx-auto;
+  @apply px-6;
+}
+
+h1 {
+}
+
+h2 {
+}
+
+h3 {
+  @apply text-xl;
+}
+
+h4 {
+}
+
+p {
+  @apply font-paragraph;
+}
+a {
+  @apply duration-300;
+  @apply transition-all;
+}
+button {
+  @apply duration-300;
+  @apply transition-all;
+}

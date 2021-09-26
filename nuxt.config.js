@@ -32,17 +32,38 @@ export default {
   /*
    ** Global CSS
    */
-  css: ["@/assets/css/resetr.css", "@/assets/css/common.css"],
+  css: [
+    "@/assets/css/resetr.css",
+    "@/assets/css/common.css",
+    "~/assets/css/app.css"
+  ],
 
   /*
    ** Plugins to load before mounting the App
    */
   plugins: [{ src: "~/plugins/prismicLinks", ssr: false }],
 
+  buildModules: [
+    // https://go.nuxtjs.dev/eslint
+    // "@nuxtjs/eslint-module",
+    // https://go.nuxtjs.dev/tailwindcss
+    "@nuxtjs/tailwindcss",
+
+    [
+      "@nuxtjs/fontawesome",
+      {
+        icons: {
+          solid: true
+        }
+      }
+    ]
+  ],
+
   /*
    ** Nuxt.js modules
    */
   modules: [
+    "@nuxtjs/tailwindcss",
     // https://prismic-nuxt.js.org/
     "@nuxtjs/prismic"
   ],
@@ -50,7 +71,8 @@ export default {
   prismic: {
     endpoint: "https://e10a.cdn.prismic.io/api/v2",
     linkResolver: "@/plugins/link-resolver",
-    htmlSerializer: "@/plugins/html-serializer"
+    htmlSerializer: "@/plugins/html-serializer",
+    modern: true
   },
 
   /*
