@@ -44,6 +44,17 @@ export default {
   plugins: [{ src: "~/plugins/prismicLinks", ssr: false }],
 
   buildModules: [
+    // https://go.nuxtjs.dev/tailwindcss
+    "@nuxtjs/tailwindcss",
+
+    [
+      "@nuxtjs/fontawesome",
+      {
+        icons: {
+          solid: true
+        }
+      }
+    ]
   ],
 
   /*
