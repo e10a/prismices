@@ -1,18 +1,8 @@
 <template>
   <section class="home">
+    {{ $prismic.asText(pageContent.title) }}
     <article>
-      <div
-        class="blog-avatar"
-        :style="{ backgroundImage: 'url(' + image + ')' }"
-      ></div>
-      <!-- Template for page title -->
-      <h1 class="blog-title">
-        {{ $prismic.asText(homepageContent.headline) }}
-      </h1>
-      <!-- Template for page description -->
-      <p class="blog-description">
-        {{ $prismic.asText(homepageContent.description) }}
-      </p>
+
     </article>
   </section>
 </template>
@@ -28,11 +18,11 @@ export default {
   async asyncData({ $prismic, error }) {
     try {
       // Query to get blog home content
-      const homepageContent = (await $prismic.api.getSingle("homepage")).data;
+      const pageContent = (await $prismic.api.getSingle("homepage")).data;
 
       // Returns data to be used in template
       return {
-        homepageContent,
+        pageContent,
       };
     } catch (e) {
       // Returns error page
