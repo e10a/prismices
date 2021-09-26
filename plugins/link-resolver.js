@@ -7,6 +7,10 @@ export default function (doc) {
     return '/not-found'
   }
 
+  if (doc.type === 'homepage') {
+    return '/homepage'
+  }
+
   if (doc.type === 'blog_home') {
     return '/'
   }
