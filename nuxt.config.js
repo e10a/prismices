@@ -45,10 +45,11 @@ export default {
 
   buildModules: [
     // https://go.nuxtjs.dev/eslint
-    // "@nuxtjs/eslint-module",
+    "@nuxtjs/eslint-module",
     // https://go.nuxtjs.dev/tailwindcss
     "@nuxtjs/tailwindcss",
 
+    "@nuxtjs/tailwindcss",
     [
       "@nuxtjs/fontawesome",
       {
@@ -63,7 +64,6 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
-    "@nuxtjs/tailwindcss",
     // https://prismic-nuxt.js.org/
     "@nuxtjs/prismic"
   ],
