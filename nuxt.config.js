@@ -49,7 +49,6 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     "@nuxtjs/tailwindcss",
 
-    "@nuxtjs/tailwindcss",
     [
       "@nuxtjs/fontawesome",
       {
