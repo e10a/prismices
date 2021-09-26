@@ -27,7 +27,7 @@
           <div class="border rounded-full bg-black bg-opacity-10 h-full"></div>
         </div>
         <div class="flex items-center gap-4">
-        <div class="text-sm">SIGN IN</div>
+          <div class="text-sm">SIGN IN</div>
           <font-awesome-icon :icon="'shopping-cart'" />
         </div>
       </div>
@@ -43,8 +43,6 @@
         <div>[link]</div>
       </div>
     </section>
-
-
 
     <section class="relative text-white">
       <div class="absolute h-full w-full flex flex-col">
@@ -66,7 +64,9 @@
       </div>
       <div class="relative am-section-content">
         <div class="py-6">
-          <h2 class="text-4xl text-center font-serif">{{ $prismic.asText(pageContent.title) }}</h2>
+          <h2 class="text-4xl text-center font-serif">
+            {{ $prismic.asText(pageContent.title) }}
+          </h2>
         </div>
         <div class="flex justify-between">
           <div class="text-center space-y-2">
@@ -108,9 +108,6 @@
         </div>
       </div>
     </section>
-
-
-
 
     <section class="py-6">
       <div class="am-section-content space-y-4">
@@ -199,7 +196,9 @@
         </div>
         <div class="flex gap-6">
           <div class="space-y-2">
-            <h4 class="font-serif text-xl leading-tight">A community doing good</h4>
+            <h4 class="font-serif text-xl leading-tight">
+              A community doing good
+            </h4>
             <p class="font-paragraph leading-snug">
               Big ol boofers what a nice floof long woofer shoob long water
               shoob, heckin long water shoob bork. Wrinkler boof heckin good
@@ -207,7 +206,9 @@
             </p>
           </div>
           <div class="space-y-2">
-            <h4 class="font-serif text-xl leading-tight">Support independent creators</h4>
+            <h4 class="font-serif text-xl leading-tight">
+              Support independent creators
+            </h4>
             <p class="font-paragraph leading-snug">
               Big ol boofers what a nice floof long woofer shoob long water
               shoob, heckin long water shoob bork. Wrinkler boof heckin good
@@ -277,7 +278,6 @@
         </div>
       </div>
     </section>
-
   </section>
 </template>
 
@@ -297,6 +297,7 @@ export default {
       // Returns data to be used in template
       return {
         pageContent,
+        classes: []
       };
     } catch (e) {
       // Returns error page
