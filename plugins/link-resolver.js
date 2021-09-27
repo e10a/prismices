@@ -8,11 +8,11 @@ export default function (doc) {
   }
 
   if (doc.type === 'homepage') {
-    return '/homepage'
+    return '/'
   }
 
   if (doc.type === 'blog_home') {
-    return '/'
+    return '/blog'
   }
 
   if (doc.type === 'post') {

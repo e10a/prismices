@@ -1,6 +1,7 @@
 <template>
   <div>
     <nuxt />
+
     <site-footer />
   </div>
 </template>
@@ -14,14 +15,7 @@ export default {
   },
   head() {
     return {
-      title: "Prismic Nuxt.js Blog",
-      script: [
-        {
-          src: "https://static.cdn.prismic.io/prismic.js?new=true&repo=e10a",
-          defer: true,
-          async: true
-        }
-      ]
+      title: "Prismic Nuxt.js Blog"
     };
   }
 };

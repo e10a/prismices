@@ -21,6 +21,14 @@ export default {
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css?family=Lato:300,400,700,900"
       }
+    ],
+
+    script: [
+      {
+        src: "https://static.cdn.prismic.io/prismic.js?new=true&repo=e10a",
+        defer: true,
+        async: true
+      },
     ]
   },
 
