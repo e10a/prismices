@@ -1,5 +1,5 @@
-const defaultTheme = require("tailwindcss/defaultTheme");
-const colors = require("tailwindcss/colors");
+const defaultTheme = require("./node_modules/tailwindcss/defaultTheme");
+const colors = require("./node_modules/tailwindcss/colors");
 
 module.exports = {
   mode: "jit",
