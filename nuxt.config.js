@@ -35,7 +35,7 @@ export default {
   css: [
     "@/assets/css/resetr.css",
     "@/assets/css/common.css",
-    "~/assets/css/app.css"
+    "@/assets/css/app.css"
   ],
 
   /*
